@@ -8,6 +8,8 @@
         android:id="@+id/menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:layout_gravity="bottom|end"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
@@ -61,5 +63,22 @@
             fab:fab_colorRipple="@color/colorAccent"/>
 
     </com.github.clans.fab.FloatingActionMenu>
+        fab:menu_fab_size="normal">
+        <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/menu_item_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_size="mini"
+        fab:fab_label="Find Group" />
 
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            fab:fab_label="Host Group" />
+     </com.github.clans.fab.FloatingActionMenu>
 </FrameLayout>
+
+
+
