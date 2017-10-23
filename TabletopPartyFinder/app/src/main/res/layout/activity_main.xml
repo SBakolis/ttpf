@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.github.clans.fab.FloatingActionButton
+    <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,11 +16,11 @@
         fab:menu_fab_size="normal">
 
         <com.github.clans.fab.FloatingActionButton
-        android:id="@+id/menu_item_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        fab:fab_size="mini"
-        fab:fab_label="Find Group" />
+            android:id="@+id/menu_item_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            fab:fab_label="Find Group" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_item_2"
@@ -28,8 +28,7 @@
             android:layout_height="wrap_content"
             fab:fab_size="mini"
             fab:fab_label="Host Group" />
-     </com.github.clans.fab.FloatingActionMenu>
+    </com.github.clans.fab.FloatingActionMenu>
 </FrameLayout>
-
 
 
