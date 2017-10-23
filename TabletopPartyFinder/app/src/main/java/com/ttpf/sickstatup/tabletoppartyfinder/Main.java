@@ -18,34 +18,21 @@ public class Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FindGroupBtn = (Button)findViewById(R.id.menu_item_1);
-        HostGroupBtn = (Button)findViewById(R.id.menu_item_2);
-
         FindGroupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                passToFindGroup();
+                startActivity(new Intent(Main.this, FindGroup.class));
             }
         });
 
         HostGroupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                passToHostGroup();
+                startActivity(new Intent(Main.this, HostGroup.class));
+
             }
         });
 
-    }
 
-    public void passToFindGroup()
-    {
-        Intent findGrpActivity = new Intent(this, FindGroup.class);
-        startActivity(findGrpActivity);
-    }
-
-    public void passToHostGroup()
-    {
-        Intent hostGrpActivity = new Intent(this, HostGroup.class);
-        startActivity(hostGrpActivity);
     }
 }
