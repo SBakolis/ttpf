@@ -35,20 +35,22 @@ public class Main extends AppCompatActivity {
          return true;
     }
 
-   /* @Override
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.website:
-                website();
+                Website();
                 return true;
             case R.id.tutorial:
-                showHelp();
+                Tutorial();
                 return true;
+            case R.id.about:
+                About();
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }*/
+    }
 
     public void findGroup(View view){
         startActivity(new Intent(Main.this, FindGroup.class));
