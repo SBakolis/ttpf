@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 
+import java.util.zip.Inflater;
+
 
 public class Main extends AppCompatActivity {
 
@@ -22,19 +24,17 @@ public class Main extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-    public void showPopup(View view) {
-        PopupMenu popup = new PopupMenu(this, view);
-        MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.options_menu, popup.getMenu());
-        popup.show();
-    }
-        @Override
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.options_menu, menu);
-         return true;
+        return true;
+
     }
 
+    /*
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
@@ -50,7 +50,8 @@ public class Main extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
+
+    }*/
 
     public void findGroup(View view){
         startActivity(new Intent(Main.this, FindGroup.class));
