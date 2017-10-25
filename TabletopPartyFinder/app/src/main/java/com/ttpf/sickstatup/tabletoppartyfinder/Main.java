@@ -28,7 +28,7 @@ public class Main extends AppCompatActivity {
         inflater.inflate(R.menu.options_menu, popup.getMenu());
         popup.show();
     }
-        @Override
+       @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.options_menu, menu);
@@ -40,18 +40,24 @@ public class Main extends AppCompatActivity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.website:
-                Website();
+
                 return true;
             case R.id.tutorial:
-                Tutorial();
+
                 return true;
             case R.id.about:
-                About();
+                About(item);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
+
+
+    public void About(MenuItem item){
+        startActivity(new Intent(Main.this, About.class));
+    }
     public void findGroup(View view){
         startActivity(new Intent(Main.this, FindGroup.class));
     }
@@ -59,4 +65,6 @@ public class Main extends AppCompatActivity {
     public void hostGroup(View view){
         startActivity(new Intent(Main.this, HostGroup.class));
     }
+
+
 }
