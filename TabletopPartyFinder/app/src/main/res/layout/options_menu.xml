@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <menu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <item
+            android:id="@+id/app_name"
+            android:title="@string/app_name"
+            app:showAsAction="always"/>
+        <item
+            android:id="@+id/website"
+            android:title="@string/website"
+            app:showAsAction="always"/>
+        <item
+            android:id="@+id/tutorial"
+            android:title="@string/tutorial"
+            app:showAsAction="always"/>
+        <item
+            android:id="@+id/about"
+            android:title="@string/about"
+            app:showAsAction="always"/>
+    </menu>
+</LinearLayout>

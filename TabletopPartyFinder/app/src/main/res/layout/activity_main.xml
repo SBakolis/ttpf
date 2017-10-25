@@ -48,36 +48,28 @@
         android:label="@string/app_name"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
-        <ImageButton
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginRight="16dp"
-            android:layout_weight="2"
-            android:background="@drawable/options_icon"
-            android:onClick="@PopUpMenu"/>
-        <menu
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:allign_Left="true">
-            <item
-                android:id="@+id/app_name"
-                android:title="@string/app_name"
-                app:showAsAction="always"/>
-            <item
-                android:id="@+id/website"
-                android:title="@string/website"
-                app:showAsAction="always"/>
-            <item
-                android:id="@+id/tutorial"
-                android:title="@string/tutorial"
-                app:showAsAction="always"/>
-            <item
-                android:id="@+id/about"
-                android:title="@string/about"
-                app:showAsAction="always"/>
-        </menu>
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/app_name"
+                android:layout_weight="8"
+                android:textSize="26sp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@android:color/white"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_weight="2"
+                android:background="@drawable/options_icon"/>
+                android:onClick="
+        </LinearLayout>
+
     </android.support.v7.widget.Toolbar>
 
 
