@@ -8,21 +8,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         >
-        <item
-            android:id="@+id/app_name"
-            android:title="@string/app_name"
-            app:showAsAction="always"/>
+
         <item
             android:id="@+id/website"
             android:title="@string/website"
-            app:showAsAction="always"/>
+            app:showAsAction="never"/>
         <item
             android:id="@+id/tutorial"
             android:title="@string/tutorial"
-            app:showAsAction="always"/>
+            app:showAsAction="never"/>
         <item
             android:id="@+id/about"
             android:title="@string/about"
-            app:showAsAction="always"/>
+            app:showAsAction="never"/>
     </menu>
 </LinearLayout>

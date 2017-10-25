@@ -3,6 +3,7 @@ package com.ttpf.sickstatup.tabletoppartyfinder;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -18,29 +19,25 @@ public class Main extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main_menu, menu);
-=======
-        //test
->>>>>>> 53760507bdec405023b5a11d5d3637eaf21c6344
 
-        return true;
-    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         // Handle item selection
         switch (item.getItemId()) {
-            case R.id.new_game:
-                newGame();
+            case R.id.website:
+
                 return true;
-            case R.id.help:
-                showHelp();
+            case R.id.about:
+                return true;
+
+            case R.id.tutorial:
+
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
