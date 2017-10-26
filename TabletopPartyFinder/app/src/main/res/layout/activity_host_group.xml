@@ -36,8 +36,10 @@
 
             <Spinner
                 android:id="@+id/games_spinner"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="112dp"
+                android:layout_marginRight="112dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
@@ -101,6 +103,32 @@
                 android:layout_toRightOf="@id/dm_check"
                 android:text="@string/player_check_box"
                 />
+
+                <TextView
+                    android:id="@+id/number_of_players"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="20sp"
+                    android:text="@string/number_of_players"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@id/dm_check" />
+
+                    <Spinner
+                        android:id="@+id/player_number_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="112dp"
+                        android:layout_marginRight="112dp"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:dropDownSelector="@android:color/black"
+                        android:background="@android:color/white"
+                        android:layout_below="@id/player_check"
+                        android:layout_toRightOf="@id/number_of_players"/>
 
 
     </RelativeLayout>

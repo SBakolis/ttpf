@@ -14,6 +14,15 @@
         <item>Dungeons and Dragons</item>
         <item>Pathfinder</item>
     </string-array>
+    <string-array name="number_of_players">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8+</item>
+    </string-array>
+    <string name="number_of_players">Number of players:</string>
 
 
 </resources>
