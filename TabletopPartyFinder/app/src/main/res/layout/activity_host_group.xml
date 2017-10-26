@@ -1,8 +1,112 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
 
-</FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/host_group_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/host_group"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tabletop_game_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="26dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/tabletop_game"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_below="@id/host_group_title"/>
+
+            <Spinner
+                android:id="@+id/games_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:dropDownSelector="@android:color/black"
+                android:background="@android:color/white"
+                android:layout_below="@id/tabletop_game_text"/>
+
+            <EditText
+                android:id="@+id/group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/group_name_hint"
+                android:backgroundTint="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:layout_below="@id/games_spinner"
+                android:layout_marginTop="26dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/play_as_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/group_role"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:layout_below="@id/group_name"/>
+
+            <CheckBox
+                android:id="@+id/dm_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:buttonTint="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:text="@string/dm_check_box"
+                android:layout_below="@id/play_as_text"/>
+
+            <CheckBox
+                android:id="@+id/player_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:buttonTint="@android:color/holo_green_dark"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_below="@id/play_as_text"
+                android:layout_toRightOf="@id/dm_check"
+                android:text="@string/player_check_box"
+                />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
 
 
