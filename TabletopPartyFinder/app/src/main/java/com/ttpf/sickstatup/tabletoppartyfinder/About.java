@@ -15,7 +15,9 @@ public class About extends Main{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_about);
+
 
 
     }

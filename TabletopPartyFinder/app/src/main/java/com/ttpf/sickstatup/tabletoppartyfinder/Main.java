@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 
+import java.util.zip.Inflater;
+
 
 public class Main extends AppCompatActivity {
 
@@ -23,13 +25,18 @@ public class Main extends AppCompatActivity {
 
     }
 
-       @Override
+
+    @Override
+
     public boolean onCreateOptionsMenu(Menu menu) {
+
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.options_menu, menu);
-         return true;
+        return true;
+
     }
 
+    
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
@@ -46,6 +53,7 @@ public class Main extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+
     }
 
 
@@ -63,3 +71,4 @@ public class Main extends AppCompatActivity {
 
 
 }
+
