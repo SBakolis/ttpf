@@ -34,6 +34,7 @@
         <CheckBox android:id="@+id/checkbox_meat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="6dp"
             android:text="I can provide my place for the group."
         />
 
@@ -42,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
+            android:layout_margin="6dp"
             android:layout_gravity="bottom|center"
             android:text="Great lets go"
         />
