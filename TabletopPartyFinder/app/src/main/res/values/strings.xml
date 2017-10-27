@@ -23,6 +23,7 @@
         <item>8+</item>
     </string-array>
     <string name="number_of_players">Number of players:</string>
+    <string name="host_group_button">Host Group</string>
 
 
 </resources>
