@@ -57,7 +57,7 @@
             android:layout_marginTop="46dp"
             android:focusable="true"
             android:hint="Enter Username"
-
+            android:inputType="textVisiblePassword|textNoSuggestions"
             android:textColorHint="@color/colorPrimary" />
 
             <!-- password box -->
