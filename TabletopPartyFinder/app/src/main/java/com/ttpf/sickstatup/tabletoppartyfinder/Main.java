@@ -22,12 +22,7 @@ public class Main extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-    public void showPopup(View view) {
-        PopupMenu popup = new PopupMenu(this, view);
-        MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.options_menu, popup.getMenu());
-        popup.show();
-    }
+
        @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

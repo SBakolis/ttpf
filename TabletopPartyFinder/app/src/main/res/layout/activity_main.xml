@@ -45,7 +45,7 @@
 
         tools:context=".MainActivity">
 
-
+             <!-- Username box -->
         <EditText
             android:id="@+id/UserText"
             android:layout_width="wrap_content"
@@ -60,7 +60,7 @@
 
             android:textColorHint="@color/colorPrimary" />
 
-
+            <!-- password box -->
         <EditText
             android:id="@+id/PasswordText"
             android:layout_width="wrap_content"
