@@ -131,14 +131,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/star_host_group"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="26dp"
             android:layout_below="@id/number_of_players"/>
 
         <ImageView
             android:id="@+id/image2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="26dp"
             android:src="@drawable/skull_host_group"
             android:layout_below="@id/number_of_players"
             android:layout_marginLeft="259dp"/>
