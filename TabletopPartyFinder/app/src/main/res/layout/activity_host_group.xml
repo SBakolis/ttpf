@@ -1,8 +1,163 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/host_group_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/host_group"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tabletop_game_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/tabletop_game"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_below="@id/host_group_title"/>
+
+        <Spinner
+            android:id="@+id/games_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="112dp"
+            android:layout_marginRight="112dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:dropDownSelector="@android:color/black"
+            android:layout_below="@id/tabletop_game_text"/>
+
+        <EditText
+            android:id="@+id/group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/group_name_hint"
+            android:backgroundTint="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            android:layout_below="@id/games_spinner"
+            android:layout_marginTop="26dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp" />
+
+        <TextView
+            android:id="@+id/play_as_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/group_role"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            android:layout_below="@id/group_name"/>
+
+        <CheckBox
+            android:id="@+id/dm_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:buttonTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:text="@string/dm_check_box"
+            android:layout_below="@id/play_as_text"/>
+
+        <CheckBox
+            android:id="@+id/player_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:buttonTint="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/play_as_text"
+            android:layout_toRightOf="@id/dm_check"
+            android:text="@string/player_check_box" />
+
+        <TextView
+            android:id="@+id/number_of_players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="20sp"
+            android:text="@string/number_of_players"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/dm_check" />
+
+        <Spinner
+            android:id="@+id/player_number_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="112dp"
+            android:layout_marginRight="112dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:dropDownSelector="@android:color/black"
+            android:layout_below="@id/player_check"
+            android:layout_toRightOf="@id/number_of_players"/>
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_host_group"
+            android:layout_marginTop="26dp"
+            android:layout_below="@id/number_of_players"/>
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/skull_host_group"
+            android:layout_below="@id/number_of_players"
+            android:layout_marginLeft="259dp"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/host_group_button"
+            android:layout_below="@id/number_of_players"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="56dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/image1"/>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
 
 

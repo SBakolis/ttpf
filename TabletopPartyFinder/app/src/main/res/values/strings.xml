@@ -4,6 +4,27 @@
     <string name="website">Website</string>
     <string name="tutorial">Tutorial</string>
     <string name="about">About</string>
+    <string name="host_group">Host Your Own Group</string>
+    <string name="tabletop_game">Chose the tabletop game you want to play:</string>
+    <string name="group_name_hint">Group Name</string>
+    <string name="group_role">Play As?</string>
+    <string name="dm_check_box">Dungeon Master</string>
+    <string name="player_check_box">Player</string>
+    <string-array name="tabletop_games">
+        <item>Dungeons and Dragons</item>
+        <item>Pathfinder</item>
+    </string-array>
+    <string-array name="number_of_players">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8+</item>
+    </string-array>
+    <string name="number_of_players">Number of players:</string>
+    <string name="host_group_button">Host Group</string>
+
 
     <string name="login">Login</string>
 
