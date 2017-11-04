@@ -21,10 +21,10 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                 layout.FragmentMain1 tab1 = new layout.FragmentMain1();
+                 FragmentMain1 tab1 = new FragmentMain1();
                  return tab1;
             case 1:
-                layout.FragmentMain2 tab2 = new layout.FragmentMain2();
+                FragmentMain2 tab2 = new FragmentMain2();
                 return tab2;
             default:
                 return null;
