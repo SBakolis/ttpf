@@ -30,8 +30,8 @@ public class Main extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 1"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 2"));
+        tabLayout.addTab(tabLayout.newTab().setText("Find Group"));
+        tabLayout.addTab(tabLayout.newTab().setText("Host Group"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
@@ -54,7 +54,7 @@ public class Main extends AppCompatActivity {
             public void onTabReselected(TabLayout.Tab tab) {
 
             }
-     });
+        });
     }
 
 
@@ -85,6 +85,8 @@ public class Main extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+
+
 
     }
 
