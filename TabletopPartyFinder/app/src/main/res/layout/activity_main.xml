@@ -1,94 +1,110 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.view.ViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" >
 
-
-    <com.github.clans.fab.FloatingActionMenu
-
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        fab:menu_fab_size="normal">
-
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/menu_item_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_size="mini"
-            fab:fab_label="Find Group"
-            android:onClick="findGroup"/>
-
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/menu_item_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_size="mini"
-            fab:fab_label="Host Group"
-            android:onClick="hostGroup"/>
-    </com.github.clans.fab.FloatingActionMenu>
-
-
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:fab="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <android.support.v4.view.PagerTitleStrip
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        tools:context=".MainActivity">
-
-             <!-- Username box -->
-        <EditText
-            android:id="@+id/UserText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="46dp"
-            android:focusable="true"
-            android:hint="Enter Username"
-            android:inputType="textVisiblePassword|textNoSuggestions"
-            android:textColorHint="@color/colorPrimary" />
-
-            <!-- password box -->
-        <EditText
-            android:id="@+id/PasswordText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/UserText"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignRight="@+id/UserText"
-            android:layout_below="@+id/UserText"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword"
-
-            android:textColorHint="@color/colorPrimary" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:theme="@style/AppTheme"
-            android:text="@string/login"
-            android:layout_below="@+id/PasswordText"
-            android:layout_centerHorizontal="true"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
 
 
-    </RelativeLayout>
+    <!--
+   <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:fab="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+       <com.github.clans.fab.FloatingActionMenu
+
+           android:id="@+id/fab"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom|end"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="16dp"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="10dp"
+           fab:menu_fab_size="normal">
+
+           <com.github.clans.fab.FloatingActionButton
+               android:id="@+id/menu_item_1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               fab:fab_size="mini"
+               fab:fab_label="Find Group"
+               android:onClick="findGroup"/>
+
+           <com.github.clans.fab.FloatingActionButton
+               android:id="@+id/menu_item_2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               fab:fab_size="mini"
+               fab:fab_label="Host Group"
+               android:onClick="hostGroup"/>
+       </com.github.clans.fab.FloatingActionMenu>
+
+
+       <RelativeLayout
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:fab="http://schemas.android.com/apk/res-auto"
+           xmlns:tools="http://schemas.android.com/tools"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+
+           tools:context=".MainActivity">
+
+
+           <EditText
+               android:id="@+id/UserText"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentStart="true"
+               android:layout_marginTop="46dp"
+               android:focusable="true"
+               android:hint="Enter Username"
+               android:inputType="textVisiblePassword|textNoSuggestions"
+               android:textColorHint="@color/colorPrimary" />
+
+
+           <EditText
+               android:id="@+id/PasswordText"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignEnd="@+id/UserText"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               android:layout_alignRight="@+id/UserText"
+               android:layout_below="@+id/UserText"
+               android:ems="10"
+               android:hint="Password"
+               android:inputType="textPassword"
+
+               android:textColorHint="@color/colorPrimary" />
+
+           <Button
+               android:id="@+id/button"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:theme="@style/AppTheme"
+               android:text="@string/login"
+               android:layout_below="@+id/PasswordText"
+               android:layout_centerHorizontal="true"/>
+
+
+       </RelativeLayout>
 
 
 
 </FrameLayout>
 
+ -->
+    </android.support.v4.view.ViewPager>
